@@ -1,0 +1,70 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Music Lens</title>
+</head>
+<body background="4.png">
+
+<div id="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="ex1.php">Sparql</a></li>
+<li><a href="visualization.html">Visualization</a></li>
+<li><a href="about.html">About Us </a></li>
+</ul>
+</div>
+
+<p>
+<h2>Welcome to MusicLens</h2>
+<font size="4">A simple web application that uses Musicbrainz's SPARQL endpoint to run search queries on the music RDF store.
+<p>
+<p>
+The endpoints can be found at:
+<p>
+<p>
+<ul><li><a href="http://dbtune.org/musicbrainz/sparql">http://dbtune.org/musicbrainz/sparql</a></li>
+<li><a href="http://linkedbrainz.org/sparql">http://linkedbrainz.org/sparql</a></li>
+</ul>
+<p>
+<p>
+Musicbrainz stores meta data about music. This includes meta data about artists, albums, and tracks. We can query the database to find information like tracks in a particular album, top sold albums by a particular band/artist, whether a person belongs to a certain band or not, etc.
+<p>
+<p>
+<b>Why MusicLens?</b>
+<p>
+A regular user who doesn't have knowledge about RDF and SPARQL will not be able to query the Musicbrainz's RDF store. Sure, he can get any information related to a certain artist or track on Google. But, he'll have to browse through the search results, and sometimes dig in deeper. With MusicLens, the user can query Musicbrainz data without knowing how the queries are written. Right now, we're providing static queries in our application. With time, we plan to implement dynamic queries which will take input from the user and output the results accordingly.
+<p>
+<p>
+<b>Some generalized queries:</b>
+<p>
+<p>
+<ul>
+<li>List URI of a particular artist/band</li>
+<li>List members of a band</li>
+<li>List top trakcs of a band/artist</li>
+<li>Is this person member of some band?</li>
+<li>Does this band exist?</li>
+<li>How many bands of the same name exist?</li>
+</ul>
+<p>
+<p><b>Data overview</b>
+<dl>
+<dt><b>Artists</b></dt>
+<dd>Name, sort name, IPI, aliases, type, begin and end dates, disambiguation comment, MBID</dd>
+<dt><b>Release Groups</b></dt>
+<dd>Title, artist credit, type, disambiguation comment, MBID</dd>
+<dt><b>Releases</b></dt>
+<dd>Title, artist credit, type, status, language, date, country, label, catalog number, barcode, medium(s), disc ID(s), ASIN, disambiguation comment, MBID</dd>
+<dt><b>Mediums</b></dt>
+<dd>Format, list of tracks (title, artist credit, duration)</dd>
+<dt><b>Recordings</b></dt>
+<dd>Title, artist credit, duration, ISRC, PUIDs, relationships, disambiguation comment, MBID</dd>
+<dt><b>Works</b></dt>
+<dd>Title, ISWC, relationships, disambiguation comment, MBID</dd>
+<dt><b>Labels</b></dt>
+<dd>Name, sort name, aliases, country, type, code, begin and end dates, disambiguation comment, MBID</dd>
+<dt><b>CD Stubs</b></dt>
+<dd>Title, artist, barcode, disc ID, disambiguation comment</dd></font>
+</body>
+</html>
